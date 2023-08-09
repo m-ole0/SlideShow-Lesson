@@ -1,0 +1,47 @@
+<!-- Swiperはスライドショーを簡単に作成できるJavaScriptのプラグイン -->
+<!-- Swiperを実装する際には、必須のCSSのクラスが存在する（下記３つ）-->
+<!--swiper（スライドショー全体を内包する要素）-->
+<!--swiper-wrapper（スライド部を内包する要素）-->
+<!--swiper-slide（各スライドを入れる要素）-->
+
+
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8">
+    <!-- SwiperをCDNで導入するためのコードを入力 --->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <!--cssを読み込む記述-->
+    <link rel="stylesheet" href="style.css"/>
+    <title>Swiper導入</title></title>
+  </head>
+  <body>
+    <div class="swiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <img src="img/nature-1.jpg"></img>
+        </div>
+        <div class="swiper-slide">
+          <img src="img/nature-2.jpg"></img>
+        </div>
+        <div class="swiper-slide">
+          <img src="img/nature-3.jpg"></img>
+        </div>
+        <div class="swiper-slide">
+          <img src="img/nature-4.jpg"></img>
+        </div>
+        <div class="swiper-slide">
+          <img src="img/nature-5.jpg"></img>
+        </div>
+      </div>
+      <!--ページネーションの要素-->
+        <div class="swiper-pagination"></div>
+      <!--ナビゲーションボタン（前、次）-->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+    </div>
+    <!--script.jsを読み込む-->
+    <script src="script.js"></script>
+  </body>
+</html>
